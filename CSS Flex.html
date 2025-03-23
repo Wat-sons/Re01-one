@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex ²¼¾Ö</title>
+    <title>Flex å¸ƒå±€</title>
 
     <style>
       body {
         margin: 0;
-        /* vh ÊÇview height ¼ÈÊÓ´°¸ß¶ÈµÄÒâË¼£¬100¾ÍÊÇ100%Õ¼Âú´°¿Ú¸ß¶È */
+        /* vh æ˜¯view height æ—¢è§†çª—é«˜åº¦çš„æ„æ€ï¼Œ100å°±æ˜¯100%å æ»¡çª—å£é«˜åº¦ */
         height: 100vh;
         background-color: #eee;
       }
@@ -20,44 +20,44 @@
       .flex {
         display: flex;
       }
-      /* Õ¼Âú±ÈÀı */
+      /* å æ»¡æ¯”ä¾‹ */
       .flex1 {
         flex: 1;
       }
-      /* ÊúÏò */
+      /* ç«–å‘ */
       .column {
         flex-direction: column;
       }
-      /* ÒõÓ° */
+      /* é˜´å½± */
       .yinYing {
         box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
           rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
       }
-      /* °×É«±³¾° */
+      /* ç™½è‰²èƒŒæ™¯ */
       .baiSe {
         background-color: #fff;
       }
-      /* ÉÏÏÂ×óÓÒÍâ±ß¾à */
+      /* ä¸Šä¸‹å·¦å³å¤–è¾¹è· */
       .mg8 {
         margin: 8px;
       }
-      /* ÓÒÍâ±ß¾à */
+      /* å³å¤–è¾¹è· */
       .mgr8 {
         margin-right: 8px;
       }
-      /* ÉÏÍâ±ß¾à */
+      /* ä¸Šå¤–è¾¹è· */
       .mgt8 {
         margin-top: 8px;
       }
-      /* ËÄ¸öĞ¡ºĞ×Ó */
+      /* å››ä¸ªå°ç›’å­ */
       .shuJu {
         height: 100px;
       }
-      /* ÖĞ¼äµÄ´óºĞ×Ó */
+      /* ä¸­é—´çš„å¤§ç›’å­ */
       .lieBiaoXiang {
         height: 160px;
       }
-      /* µ¼º½Ìõ */
+      /* å¯¼èˆªæ¡ */
       .daoHang {
         padding: 10px 20px;
         border-bottom: 1px solid rgb(201, 201, 201);
@@ -68,24 +68,24 @@
         display: none; /* Chrome Safari */
       }
 
-      /* µ±ÆÁÄ»¿í¶ÈĞ¡ÓÚ600pxÊ±Òª¸Ä±äµÄcss */
+      /* å½“å±å¹•å®½åº¦å°äº600pxæ—¶è¦æ”¹å˜çš„css */
       @media (max-width: 600px) {
-        /* Ğ¡ÆÁÄ»ÉÏÈ¡Ïû²à±ßÀ¸£¬ºóÃæÑ§jsÊ±»á½ÌÔõÃ´µ¯³ö */
+        /* å°å±å¹•ä¸Šå–æ¶ˆä¾§è¾¹æ ï¼Œåé¢å­¦jsæ—¶ä¼šæ•™æ€ä¹ˆå¼¹å‡º */
         .ceBian {
           display: none;
         }
-        /* ÄÚÈİÀ¸ºÍÊı¾İÀ¸flex·½Ïò¸ÄÎªÊúÏò */
+        /* å†…å®¹æ å’Œæ•°æ®æ flexæ–¹å‘æ”¹ä¸ºç«–å‘ */
         .neiRong {
           flex-direction: column;
         }
         .shuJuQu {
           flex-direction: column;
         }
-        /* ÓÒÇø¼Ó×óÍâ±ß¾à */
+        /* å³åŒºåŠ å·¦å¤–è¾¹è· */
         .youQu {
           margin-left: 8px;
         }
-        /* Êı¾İ¿éÍâ±ß¾à£¬´óĞ¡¸ÄÎª×Ô¶¯¿í¸ß */
+        /* æ•°æ®å—å¤–è¾¹è·ï¼Œå¤§å°æ”¹ä¸ºè‡ªåŠ¨å®½é«˜ */
         .shuJu {
           margin: 0 0 8px;
           flex: auto;
@@ -94,12 +94,12 @@
     </style>
   </head>
   <body class="flex">
-    <!-- ²à±ßÀ¸ -->
+    <!-- ä¾§è¾¹æ  -->
     <div
       style="width: 200px; z-index: 3"
       class="ceBian flex column baiSe yinYing"
     >
-      <!-- ²à±ßÍ·ÏñÀ¸ -->
+      <!-- ä¾§è¾¹å¤´åƒæ  -->
       <div
         style="
           padding: 10px;
@@ -111,40 +111,40 @@
       >
         <img
             src="https://i.imgs.ovh/2025/03/17/ChOcX.jpeg"
-            alt="Çü³¼"
+            alt="å±ˆè‡£"
             width="40px"
             height="40px"
         />
-        <div style="margin-left: 10px">Çü³¼</div>
+        <div style="margin-left: 10px">å±ˆè‡£</div>
       </div>
-      <!-- µ¼º½À¸ -->
+      <!-- å¯¼èˆªæ  -->
       <div class="flex1">
-        <div class="daoHang">µ¼º½</div>
-        <div class="daoHang">µ¼º½</div>
-        <div class="daoHang">µ¼º½</div>
-        <div class="daoHang">µ¼º½</div>
-        <div class="daoHang">µ¼º½</div>
+        <div class="daoHang">å¯¼èˆª</div>
+        <div class="daoHang">å¯¼èˆª</div>
+        <div class="daoHang">å¯¼èˆª</div>
+        <div class="daoHang">å¯¼èˆª</div>
+        <div class="daoHang">å¯¼èˆª</div>
       </div>
     </div>
-    <!-- Ö÷ÇøÓò -->
+    <!-- ä¸»åŒºåŸŸ -->
     <div class="flex flex1 column">
-      <!-- Í·²¿À¸ -->
+      <!-- å¤´éƒ¨æ  -->
       <div style="height: 60px; z-index: 2" class="baiSe yinYing"></div>
-      <!-- ÄÚÈİÇø -->
+      <!-- å†…å®¹åŒº -->
       <div class="flex flex1 neiRong" style="overflow: auto">
-        <!-- ×óÇø -->
+        <!-- å·¦åŒº -->
         <div style="flex: 3" class="flex column mg8">
-          <!-- Êı¾İÇø -->
+          <!-- æ•°æ®åŒº -->
           <div class="flex shuJuQu">
-            <!-- ËÄ¸öĞ¡¿éÏÔÊ¾ÖØµãÊı¾İ -->
+            <!-- å››ä¸ªå°å—æ˜¾ç¤ºé‡ç‚¹æ•°æ® -->
             <div class="shuJu baiSe yinYing flex1 mgr8"></div>
             <div class="shuJu baiSe yinYing flex1 mgr8"></div>
             <div class="shuJu baiSe yinYing flex1 mgr8"></div>
             <div class="shuJu baiSe yinYing flex1"></div>
           </div>
-          <!-- ÁĞ±íÇø£¬ÁĞ±íÊı¾İ¿ÉÒÔÎŞÏŞÔö¼Ó -->
+          <!-- åˆ—è¡¨åŒºï¼Œåˆ—è¡¨æ•°æ®å¯ä»¥æ— é™å¢åŠ  -->
           <div class="flex column">
-            <!-- ÁĞ±íÏî -->
+            <!-- åˆ—è¡¨é¡¹ -->
             <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
             <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
             <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
@@ -152,11 +152,11 @@
             <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
           </div>
         </div>
-        <!-- ÓÒÇø -->
+        <!-- å³åŒº -->
         <div style="flex: 1" class="youQu flex column mgr8 mgt8">
-          <!-- ÌáÊ¾Çø -->
+          <!-- æç¤ºåŒº -->
           <div style="height: 150px" class="baiSe yinYing"></div>
-          <!-- ÏûÏ¢Çø -->
+          <!-- æ¶ˆæ¯åŒº -->
           <div style="height: 300px" class="mgt8 baiSe yinYing"></div>
         </div>
       </div>
